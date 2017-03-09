@@ -1,0 +1,830 @@
+@charset "utf-8";
+/* CSS Document */
+
+ *{
+border:0;
+padding:0;
+margin:0;
+  }
+ #wrapper{
+width:1349px;
+margin:0auto;
+border:3px solid;
+color:white;
+         }
+
+  #header{
+   height:40px;
+   background-color:#0033FF;
+          } 
+     #header ul{
+	    list-style-type:none;
+	    }
+	 #header ul li{
+	    float:right;
+		width:auto;
+		border-left:1px solid #33CCFF;
+		color:#FFFFFF;
+		
+	     }
+	 #header ul li a{
+	           display:block;
+			   padding:10px 10px;
+			   color:#FFFFFF;
+			   font-size:15px;
+			   text-decoration:none;
+			  
+			 
+	         }
+ .sigla-dedeman{
+  margin-left:80px;
+  }
+   #nav{
+   height:70px;
+   background-color:#B0E0E6;
+         }
+     #nav ul{
+	     list-style-type:none;
+		 }
+     #nav ul li{
+	     float:right;
+		 width:auto;
+		 border-left:1px solid #B0E0E6;
+		    }
+	      #nav ul li a{
+		       display:block;
+			   padding:10px 10px;
+			   color:#0000CC;
+			   font-size:15px;
+			   text-decoration:none;
+			   }
+		   #nav ul li a:hover{
+		       text-decoration:underline;
+			      }
+		  
+   #content{
+     hight:2100px;
+  }
+      #main_content{
+	     widht:300px;
+		 float:left;
+		 background-color:#FF6600;
+		 min-height:600px;
+		 margin-left:80px;
+	  }
+.chenar{
+   width:373px;
+   margin-top:50px;
+  
+   list-style-type:none;
+   }
+
+.categorii{
+	color:#FFFFFF;
+	text-align: left;
+	width:349px;
+	height:800px;
+	margin-left: 50px;
+	margin-top: 50px;
+	text-decoration:none;
+	}
+
+	  #sidebar{
+	      hight:2000px;
+	      widht:500px;
+		  min-height:400px;
+		  float:left;
+		 }
+   #footer{
+   height:200px;
+   background-color:blue;
+   margin-top:30px;
+   }
+.clear{
+  clear:both;
+  }
+
+.search input[type=text] {
+    width:400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+   padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	margin-left:100px;
+	
+}
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+.mySlides {display:none}
+
+
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin-left: 100px;
+  margin-top:100px;
+
+
+
+}
+
+.mySlides {
+    display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1} 
+    slides[slideIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+}
+
+
+ .albastru-deschis{
+ 	color: 	#87CEFA;
+	text-decoration:none;
+	
+ }
+
+ .albastru-inchis{
+ 	color:#0000CD;
+	text-decoration:none;
+	
+ }
+ .portocaliu{
+	color:	#FFA500;
+	text-decoration:none;
+	}
+
+ .verde{
+color:#00FF7F;
+text-decoration:none;
+
+}
+ 
+ .tabel2{
+  
+   border-color:2px #000000;
+   width:1000px;
+   margin-left:130px;
+   border:1px solid black;
+   paddind:10px;
+   }
+ 
+th{
+ font-size:12px;
+ padding:7px;
+ }
+ 
+h2{
+color:#0000FF;
+font-family:"Times New Roman", Times, serif;
+font-size:32px;
+margin-left:140px;
+margin-top:27px;
+}
+#oferte-de-sezon{
+color:#0066FF;
+font-family:Arial, Helvetica, sans-serif;
+font-stretch:expanded;
+
+}
+
+
+
+.chenar-imagini{
+margin-top:30px;
+margin-left:90px;
+width:auto;
+
+}
+.poza1{
+width:170px;
+
+
+}
+.poza2{
+width:170px;
+
+}
+.poza3{
+width:170px;
+}
+.poza4{
+width:170px;
+}
+.poza5{
+width:170px;
+}
+
+#leftcolumn{
+width:1200px;
+height:450px;
+background-color:#FFFFFF;
+margin-left:50px;
+border:10px solid ;
+}
+
+
+
+.pozarate{
+width:auto;
+float:right;
+}
+.ceva{
+display:block;
+			  padding:15px 15px ;
+			   color:#0000CC;
+			   font-size:15px;
+			   text-decoration:none;
+			   list-style-type:none;
+		       
+			   text-align:center;
+		     }
+
+.ceva1{
+text-align:center;
+width:200px;
+position:relative;
+float:left;
+border:1px solid #FFFFFF;
+
+}
+.chenar-imagini2{
+margin-top:30px;
+margin-left:90px;
+width:auto;
+
+}
+.poza7{
+width:170px;
+
+
+}
+.poza8{
+width:170px;
+
+}
+.poza9{
+width:170px;
+}
+.poza10{
+width:170px;
+}
+.poza11{
+width:170px;
+}
+.pozarate2{
+width:auto;
+float:right;
+}
+
+#leftcolumn2{
+ background-color:#FFFFFF;
+ width:1200px;
+height:450px;
+margin-left:50px;
+border:10px solid ;
+}
+
+.ceva2{
+display:block;
+			  padding:15px 15px ;
+			   color:#0000CC;
+			   font-size:15px;
+			   text-decoration:none;
+			   list-style-type:none;
+			   text-align:center;
+		     }
+
+.ceva3{
+
+width:240px;
+position:relative;
+float:left;
+border:1px solid #FFFFFF;
+}
+
+#leftcolumn3{
+border:1px solid #000000;
+width:1000px;
+margin-top:50px;
+margin-left:130px;
+}
+
+#footer {
+color:#FFFFFF;
+list-style-type:none;
+
+}
+
+
+.luna {
+list-style-type:none;
+
+
+}
+.alb{
+
+width:305px;
+text-align:center;
+position:relative;
+float:left;
+margin-top:50px;
+margin-left:10px;
+font-size:13px;
+
+
+}
+a{
+color:#FFFFFF
+
+}
+
+
+
+
+#primavara{
+width:1000px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.primavara3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hprimavara{
+color:#0066FF;
+}
+
+.poza-primavara{
+float:right;
+height:376px;
+}
+
+
+
+#Bucatarie{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.bucatarie3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hbucatarie{
+color:#0066FF;
+}
+
+.poza-bucatarie{
+float:right;
+height:370px;
+}
+
+#Baie{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.baie3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hbaie{
+color:#0066FF;
+}
+
+.poza-baie{
+float:right;
+height:370px;
+}
+
+#Mobilier{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.mobilier3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hmobilier{
+color:#0066FF;
+}
+
+.poza-mobilier{
+float:right;
+height:370px;
+}
+
+#Electrocasnice{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.electrocasnice3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.helectrocasnice{
+color:#0066FF;
+}
+
+.poza-electrocasnice{
+float:right;
+height:370px;
+}
+
+
+#Scule-si-unelte{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.scule-si-unelte3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.scule-si-unelte{
+color:#0066FF;
+}
+
+.poza-scule-si-unelte{
+float:right;
+height:370px;
+}
+
+
+#Gradina{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.gradina3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hgradina{
+color:#0066FF;
+}
+
+.poza-gradina{
+float:right;
+height:370px;
+}
+
+
+#Auto{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.auto3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hauto{
+color:#0066FF;
+}
+
+.poza-auto{
+float:right;
+height:370px;
+}
+
+#Decoratiuni{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.decoratiuni3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hdecoratiuni{
+color:#0066FF;
+}
+
+.poza-decoratiuni{
+float:right;
+height:370px;
+}
+
+#Amenajari-interioare{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.amenajari-interioare3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hamenajari-interioare{
+color:#0066FF;
+}
+
+.poza-amenajari-interioare{
+float:right;
+height:370px;
+}
+
+#Gresie-si-faianta{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.gresie-si-faianta3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hgresie-si-faianta{
+color:#0066FF;
+}
+
+.poza-gresie-si-faianta{
+float:right;
+height:370px;
+}
+
+
+#Constructii{
+width:1000px;
+height:440px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.constructii3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hconstructii{
+color:#0066FF;
+}
+
+.poza-constructii{
+float:right;
+height:370px;
+}
+
+#Termice{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.termice3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.htermice{
+color:#0066FF;
+}
+
+.poza-termice{
+float:right;
+height:370px;
+}
+
+#Electrice{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.electrice3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.helectrice{
+color:#0066FF;
+}
+
+.poza-electrice{
+float:right;
+height:370px;
+}
+
+#Sanitare{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.sanitare3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hsanitare{
+color:#0066FF;
+}
+
+.poza-sanitare{
+float:right;
+height:370px;
+}
+
+#Dormitoare{
+width:1000px;
+height:390px;
+margin-top:40px;
+background-color:#66FF99;
+margin-left:150px;
+border:10px solid #66FF99;
+
+}
+.dormitoare3{
+list-style-type:none;
+color:#0099FF;
+
+}
+
+.hdormitoare{
+color:#0066FF;
+}
+
+.poza-dormitoare{
+float:right;
+height:370px;
+}
