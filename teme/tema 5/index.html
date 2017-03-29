@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>La scara</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport"content="width=device-width,initiale-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+
+</head>
+<body background="lascara1.jpg">
+
+	<div class="cafea">
+	<a class="coffee"href="#"><i class="fa fa-coffee fa-2x" aria-hidden="true">Coffee</i></a>
+ 
+</div>
+  
+  <div class="butoane">
+ 
+ 
+<button type="button" class="btn btn-default">Despre</button>
+<a href="produse.html"><button type="button" class="btn btn-primary">Cafenea</button></a>
+<button type="button" class="btn btn-success">Restaurant</button>
+<a href="angajati.html"><button type="button" class="btn btn-info">Angajati</button></a>
+<button type="button" class="btn btn-warning">Program</button>
+<button type="button" class="btn btn-danger">Contact</button>
+   </div> 
+
+<div class="adresa">
+     <p><a class="negru" href="https://www.facebook.com/Caffee-La-Scara-112946285467788/?fref=ts"><i class="fa fa-facebook-official " aria-hidden="true"></i>Facebook</a></p>
+     <p><a class="negru"href="#"><i class="fa fa-address-card-o" aria-hidden="true"></i>Str.Scarii,Nr.1,Sighisoara</a></p>
+     <p><a class="negru"href="tel:0730352359"><i class="fa fa-phone " aria-hidden="true"></i></i>Tel:0265 774 640</a></p>
+     <p><a class="negru"href="mailto:nicolburg@yahoo.com?Subject=Buna" target="_top"><i class="fa fa-envelope-o " aria-hidden="true"></i>Timite un mesaj</a></p>
+  </div>
+  
+<div class="content">
+
+
+<div class="despre">
+  <h3>Despre noi</h3>
+  <p>Cafeneaua este situata langa scara acoperita din Cetatea medievala Sighisoara.Este un loc intim si frumos potrivit pentru o buna relaxare si bineinteles pentru a calatorii in timp admirand privelistea asupra Cetatii Medievale.Oferim servicii de cafenea dar si restaurant,asadar va asteptam cu drag la o cafea buna si o masa delicioasa in inima Sighisorii.
+
+</div>
+ <div class="w3-content w3-display-container">
+    <img class="mySlides" src="269021_112975752131508_7142540_n.jpg">
+    <img class="mySlides" src="267851_112952755467141_1892425_n.jpg">
+    <img class="mySlides" src="1504043_540193116076434_121650362_n.jpg">
+    <img class="mySlides" src="270462_112981702130913_5115060_n.jpg">
+    <img class="mySlides" src="270486_112975628798187_7796163_n.jpg">
+    <img class="mySlides" src="282726_112951465467270_3431087_n.jpg"> 
+    <img class="mySlides" src="coffee.jpg">
+    <img class="mySlides" src="smoothie.jpg">
+    <img class="mySlides" src="bar-1.jpg">
+    <img class="mySlides" src="download (1).jpg">
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+   
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+ <p class="orasul">
+Sighisoara, o farama de lume care a invatat sa pacaleasca trecerea vremii, o parte de Romanie care ne vorbeste astazi despre frumusetea, gloria si demnitatea istoriei noastre si a Europei.</p>
+<p class="orasul">
+Singura cetate medievala locuita din sud-estul Europei, Sighisoara, este un oras plin de legende si mistere, o destinatie ideala pentru turistii care vor sa combine adevarul istoric cu mitul.</p>
+<p class="va-asteptam">
+Va asteptam !</p>
+
+  <div class="input">
+  <p><input type="checkbox"name="mare" >Cafea mare</p> 
+   <p><input type="checkbox"name="medie">Cafea medie</p>
+   <p><input type="checkbox"name="mica">Cafea mica</p>
+     <p><input type="checkbox"name="lapte">Cu lapte</p>
+      <p><input type="checkbox"name="fara">Fara lapte</p>
+    <button class="creeaza"href="#">Creeaza</a>
+  </input>
+</div>
+</div>
+ <div class="footer" >
+<img class="sighisoara" src="stone.jpg">
+<img class="sigla"src="sigla.jpg">
+
+<div class="list-group">
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>&nbsp; Facebook</a></div>
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-book fa-fw fa-2x " aria-hidden="true"></i>&nbsp; Library</a></div>
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-pencil fa-fw fa-2x" aria-hidden="true"></i>&nbsp; Applications</a></div>
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-cog fa-fw fa-2x" aria-hidden="true"></i>&nbsp; Settings</a></div>
+</div>
+
+
+ </div>
+
+
+</body>
+</html>
