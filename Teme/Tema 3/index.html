@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dedeman</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <div id="wrapper">
+  
+    <div id="header">
+       <ul>
+         <li><a href="#">Contul meu</a></li>
+         <li>Ai o intrebare?Suna acum la SUPORT CLIENTI:0234 525 525</li>
+         <li>Bun venit la Dedeman</li>
+        </ul>
+      
+	<img class="sigla-dedeman" src="dedeman.jpg"> 
+
+        
+        
+    </div><!--end header-->
+    
+    <div id="nav">
+        <ul>
+          <li><a href="#">ALEGETI MAGAZINUL</a></li>
+          <li><a href="#">COMENZI ONLINE</a></li>
+          <li><a href="#">REVISTA</a></li>
+          <li><a href="#">DEDEMANUAL</a></li>
+          <li><a href="#">PRESA</a></li>
+          <li><a href="#">CARIERA</a></li>
+          <li><a href="#">COMPANIA</a></li>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div><!--end nav-->
+    
+    <div id="content">
+       <div id="main_content">
+       <div class="lista-portocalie">
+       <ul class="chenar">     	
+    <p><li ><a class="categorii"href="index2.html">PRODUSE</a></li></p>
+    <br><li ><a class="categorii" href="#">PRIMAVARA</a></li></br>
+    <p><li ><a class="categorii" href="#">BUCATARIE</a></li></p>
+    <br><li ><a class="categorii"href="#">BAIE</a></li></br>
+    <p><li ><a class="categorii"href="#">MOBILIER</a></li></p>
+    <br><li ><a class="categorii" href="#">ELECTROCASNICE</a></li></br>
+    <p><li ><a class="categorii"href="#">SCULE SI UNELTE</a></li></p>
+    <br><li ><a class="categorii"href="#">GRADINA</a></li></br>
+    <p><li ><a class="categorii" href="#">AUTO</a></li></p>
+    <br><li ><a class="categorii" href="#">DECORATIUNI</a></li></br>
+    <p><li ><a class="categorii"href="#">AMENAJARIE INTERIOARE</a></li></p>
+    <br><li ><a class="categorii"href="#">GRESIE SI FAIANTA</a></li></br>
+    <p><li ><a class="categorii"href="#">CONSTRUCTII</a></li></p>
+    <br><li ><a class="categorii"href="#">TERMICE</a></li></br>
+    <p><li ><a class="categorii"href="#">ELECTRICE</a></li></p>
+    <br><li ><a class="categorii"href="#">SANITARE</a></li></br>
+    <p><li ><a class="categorii"href="#">DORMITOARE</a></li></p>
+ </ul>
+ </div>
+ </div>
+       </div><!--end main_content-->
+       
+       <div id="sidebar">
+       <form class="search"> 
+	<br><input type="text" name"search" placeholder="Search"></br>
+</form>
+
+   <div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="700x369_3020746_KoddaPanelDus.png" style="width:100%">
+    <div class="text">CaptionOne</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="700x369_6016975_RaftStabil300Galv300kg.png" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="700x369_8013748_FotoliuTUDORwenge.png" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="700x369_-8036991--DORMITOR_ERIC1.png" style="width:100%">
+    <div class="text">Caption Four</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5/ 6</div>
+    <img src="700x369_8049495_TopperDormeoVerdeEucalypt.png" style="width:100%">
+    <div class="text">Caption Five</div>
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">6/ 7</div>
+    <img src="martisor_banner_home.jpg" style="width:100%">
+    <div class="text">Caption Six</div>
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext">7/ 7</div>
+    <img src="revista_700x369.jpg" style="width:100%">
+    <div class="text">Caption Seven</div>
+  </div>
+
+  <a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onClick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onClick="currentSlide(1)"></span> 
+  <span class="dot" onClick="currentSlide(2)"></span> 
+  <span class="dot" onClick="currentSlide(3)"></span> 
+  <span class="dot" onClick="currentSlide(4)"></span> 
+  <span class="dot" onClick="currentSlide(5)"></span> 
+  <span class="dot" onClick="currentSlide(6)"></span> 
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+   </div><!--end sidebar-->
+   
+   
+    <div class="clear">
+     <table class="tabel2">
+   	<tr>
+   		<th><a class="albastru-deschis"href="#"><p>45 MAGAZINE IN 38 DE ORASE</p><p>VEZI RETEAUA DEDEMAN!</p></a></th>
+   	    <th><a class="albastru-inchis"href="#"><p>SOLUTII DE CREDITARE</P><P>PENTRU PLANURILE TALE</p></a></th>
+   	    <th><a class="portocaliu"href"#"><p>MODALITATI DE PLATA IN</p><p>MAGAZINELE DEDEMAN</p></a></th>
+   	    <th><a class="verde"href="#"><p>CARDURI CADOU DEDEMAN</p><p>VEZI TOATE VALORILE</p></a></th>
+    </tr>
+</table>
+    </div><!--end clear-->
+    
+  <h2 class="titlu">Noutati
+   <p id="oferte-de-sezon">Oferte de sezon</p></h2>
+   
+   <div id="leftcolumn">
+   
+   <div class="chenar-imagini">
+   <img class="poza1" src="7011267_8594014350388.jpg">
+   <img class="poza2"src="5-borduri-gard_zincat_1.jpg">
+   <img class="poza3"src="img_8572.jpg">
+   <img class="poza4"src="7039931.jpg">
+   <img class="poza5"src="img_0026.jpg">
+   <div class="pozarate">
+   <img class="poza6"src="61a2db716f864da437b6bb31f91bf686.png">
+   </div>
+    </div>
+    <div class="descrieri">
+    <ul class="ceva">
+     <li class="ceva1"><p>Pamant</p><p> fertil</p><p> pentru</p><p> gazon 50l</p><br class="orange">21.99 lei</br></li>
+     <li class="ceva1">Panou gard <p>zincat</p><p> 2000x2500</p><br>81.99lei</br></li>
+     <li class="ceva1">Incubator</p><p> electric <p>Cleo 5DT</p><p> cu intoarcere</p><br>149.99lei</br></li>
+     <li class="ceva1">Foarfeca cu lame <p>neaderente</p><p> pentru gradina</p><p> TG1301021</p><br>15.99lei</br></li>
+     <li class="ceva1"><p>Curatitor cu</p><p> presiune<p> Paxton 1800W</p><br>389.01lei</br></li>
+     </ul>
+     </div>
+     </div><!--end left column-->
+<h2>Cele mai bune preturi</h2> 
+
+    
+     <div id="leftcolumn2">
+    <div class="chenar-imagini2">
+   <img class="poza7" src="4_2_1.jpg">
+   <img class="poz8"src="8033434_1.jpg">
+   <img class="poza9"src="1034200_1.jpg">
+   <img class="poza10"src="8038216.jpg">
+   <img class="poza11"src="3026255.jpg">
+   <div class="pozarate2">
+   <img class="poza12"src="c969579610ba69d42da202ef9e4a5442.png">
+   </div>
+   </div>
+   
+    <div class="descrieri2">
+    <ul class="ceva2">
+     <li class="ceva3"><p>Masina</p><p> de gaurit</p><p>Bosh PSB500</p><p> RE0603127020</p><br class="orange">181.90 lei</br></li>
+     <li class="ceva3">Saltea Viscotex <p>Superortopedica</p><p>Lux160x200cm</p><br>578.99lei</br></li>
+     <li class="ceva3">Aspirator</p><p> multifunctional<p>Karcher Wd3</p><p> 1.629-800.0</p><p>17L></p><p>1000W</p><br>274.91lei</br></li>
+     <li class="ceva3">Canapea Ella <p>culoare Lara/p><p> 2+Savana 25</p><p>  1C</p><br>798.99lei</br></li>
+     <li class="ceva3"><p>Baterie pentru</p><p> lavoar Ferro<p> Nobless Sharp</p><br>215.00lei</br></li>
+     </ul>
+     </div>
+     </div><!--end leftcolumn2-->
+     
+     
+      <div id="leftcolumn3">
+    <div class="bannere">
+    
+   <img class="pozebanner"src="banner-ups-2.jpg">
+   <img class="pozebanner"src="banner-ups-6.jpg"> 
+   <img class="pozebanner"src="banner-ups-7.jpg">
+   <img class="pozebanner"src="banner-ups-8.jpg">
+   </div>
+   </div><!--end leftcolumn3--> 
+    </div><!--end content-->
+    
+    <div id="footer">
+       <ul class="luna">
+          <li class="alb">COMPANIA
+            <ul class="sub1">
+              <li><a href="#">Despre noi</a></li>
+                <li><a href="#">Valori</a></li>
+                   <li><a href="#">Servicii DEDEMAN</a></li>
+                     <li><a href="#">Solutii de creditare</a></li>
+                      <li><a href="#">Reteaua DEDEMAN</a></li>
+                         <li><a href="#">Date de contact</a></li>
+              </ul>
+              </li>
+             
+          <li class="alb">CENTRU DE PRESA
+              <ul class="sub1">
+              <li><a href="#">DEDEMAN in mass media</a></li>
+                <li><a href="#">Calendar de evenimente</a></li>
+                   <li><a href="#">DEDEMAN in sport</a></li>
+                      <li><a href="#">Contact</a></li>
+               </ul>
+               </li>
+          <li class="alb">CARIERE
+                <ul class="sub1">
+              <li><a href="#">DEDEMAN in mass media</a></li>
+                <li><a href="#">Calendar de evenimente</a></li>
+                   <li><a href="#">DEDEMAN in sport</a></li>
+                      <li><a href="#">Contact</a></li>
+               </ul>
+               </li> 
+          
+       
+          <li class="alb">AJUTOR
+                <ul class="sub1">
+              <li><a href="#">DEDEMAN in mass media</a></li>
+                <li><a href="#">Calendar de evenimente</a></li>
+                   <li><a href="#">DEDEMAN in sport</a></li>
+                      <li><a href="#">Contact</a></li>
+               </ul>
+               </li>
+          
+       
+              
+       </ul>
+   
+    </div><!--end footer-->
+   
+   
+  </div><!--end-->  
+    
+</body>
+
+</html>
