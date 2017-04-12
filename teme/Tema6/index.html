@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tema6</title>
+<script src="js/java.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport"content="width=device-width,initiale-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+   <body>
+
+<div id="nav">
+	
+	<a href="#">HOME</a>
+	<a href="#">ABOUT</a>
+	<a href="#">SERVICES</a>
+	<a href="#">CONTACT</a>
+	
+</div>
+
+<div class="container">
+    <div class="cafea">
+	    <img class="untiled"src="untiled3.jpg">
+     </div>
+</div>
+
+<div class="content">
+  <div class="chenar">
+  <a class="coffee"href="#"><i class="fa fa-coffee fa-2x" aria-hidden="true"> CAFEA:</i></a><br>
+    
+
+  	<div id="question">	
+ <form action="/action_page.php">
+ 
+
+
+    
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Cafea mare" >Cafea mare<br> 
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Cafea medie">Cafea medie<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Cafea mica">Cafea mica<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea"value="Espresso">Espresso<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Cappuccino">Cappuccino<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Latte Macchiato">Latte Macchiato<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea"value="Zahar">Zahar<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Lapte">Lapte<br>
+   <i class="fa fa-picture-o" aria-hidden="true"></i><input type="checkbox" id="myCheck"name="cafea" value="Scortisoara">Scortisoara<br>
+  <input type="button" onclick="myFunction()" value="Send order">
+  <br><br>
+<input type="text" id="order" size="50">
+  </input>
+</form>
+   </div>  
+    
+    </div>
+
+</div>
+   
+<div id="footer">
+  <p class="connect">CONNECT</p>
+    <div class="list-group">
+      
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>&nbsp; Facebook</a></div>
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-instagram fa-fw fa-2x " aria-hidden="true"></i>&nbsp; Instagram</a></div>
+  <div class="col-md-1"><a class="list-group-item" href="#"><i class="fa fa-envelope-o fa-fw fa-2x" aria-hidden="true"></i>&nbsp; Send Email </a></div>
+  
+    </div>
+</div>
+
+         <script>
+function myFunction() {
+    var cafea = document.forms[0];
+    var txt = "";
+    var i;
+    for (i = 0; i < cafea.length; i++) {
+        if (cafea[i].checked) {
+            txt = txt + cafea[i].value + " ";
+        }
+    }
+    document.getElementById("order").value = "Ai comandat: " + txt;
+}
+
+
+
+
+</script>
+
+
+
+
+
+   
+   </body>
+   	</html>
