@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<title>Dj Twist</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="photo.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<style>
+
+</style>
+<body>
+
+<h2>PHOTO GALLERY</h2> 
+
+<div class="photos">
+
+
+  <img class="mySlides"src="images/10175970_842982062397089_3093909857487423522_n.jpg" > 
+  <img class="mySlides" src="images/71688_555091467852818_922366750_n.jpg"> 
+  <img class="mySlides" src="images/580608_564752473553384_203486091_n.jpg" >
+  <img class="mySlides" src="images/1476260_741719309190032_274920392_n.jpg">
+  <img class="mySlides" src="images/twist.jpg">
+  <img class="mySlides" src="images/10439427_932714086757219_8456075115045593275_n.jpg">
+  <img class="mySlides" src="images/10456463_885257804836181_3227392863429572622_n.jpg">
+
+ <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+<div class="background"></div>
+<footer>
+  
+    <div class="list-group">
+      <p class="connect">CONNECT</p>
+ <i class="fa fa-facebook-official fa-2x" aria-hidden="true"><button type="button" class="btn btn-primary"></i>Facebook<a href="https://www.facebook.com/DjTwistOfficial"></button></a>
+<i class="fa fa-instagram fa-fw fa-2x " aria-hidden="true"><button type="button" class="btn btn-success"></i>Instagram<a href="https://www.instagram.com/djtw15t"></button></a>
+<i class="fa fa-soundcloud fa-fw fa-2x" aria-hidden="true"><button type="button" class="btn btn-info"></i>Soundcloud<a href="https://soundcloud.com/dj-twist-ro"></button></a>
+<i class="fa fa-youtube fa-fw fa-2x" aria-hidden="true"><button type="button" class="btn btn-danger"></i>Youtube<a  href="https://www.youtube.com/user/Twist150490"></button></a>
+   </div> 
+
+ 
+
+  
+</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
